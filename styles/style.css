@@ -1,1 +1,211 @@
-/* место для вашего кода */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1440px;
+}
+
+.header {
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(3, 1fr);
+    padding: 92px 51px 92px 49px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__links-list {
+    display: flex;
+    list-style: circle;
+}
+
+.header__links-list-item {
+    padding-left: 3px;
+    padding-right: 30px;
+    white-space: nowrap;
+    text-underline-position: under;
+    align-self: center;
+}
+
+.header__links-list-item:first-child {
+    list-style: none;
+}
+
+.header__links-list-item::marker {
+    font-size: 19px;
+    stroke-width: 1px;
+}
+
+.header__link {
+    text-transform: lowercase;
+    font-size: 18px;
+    text-decoration: underline solid 1px;
+    text-decoration-skip-ink: none;
+}
+
+.header__link_active {
+    text-decoration-line: none;
+}
+
+/*header-logo*/
+.header__logo {
+    display: block;
+}
+
+.header__logo-image {
+    height: 105px;
+}
+
+/*address*/
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: inherit;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: none;
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+.address > .tel, .email {
+    text-decoration: underline solid 1px;
+}
+
+.header__address {
+    margin-left: auto;
+}
+
+/************************************************************************/
+
+.main {
+    flex-grow: 1;
+}
+
+.cover {
+    /*display: flex;*/
+    position: relative;
+    background-size: contain;
+    background: url("../images/cover.jpg") no-repeat left top;
+    z-index: -1;
+}
+
+.cover__title {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 135px;
+    padding: 165px 50px 0 50px;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+    line-height: 115%;
+    margin-bottom: 20px;
+}
+
+.aligned-text_center {
+    display: block;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.aligned-text_right {
+    display: block;
+    text-align: right;
+    line-height: 100%;
+}
+
+.letter_spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter_spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: inherit;
+    font: inherit;
+
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cover__description-text {
+    display: block;
+    color: #fff;
+    align-self: center;
+    margin-bottom: 50px;
+    padding-left: 422px;
+    text-align: center;
+    line-height: 28px;
+    word-spacing: 17px;
+}
+
+.cover__description-text__extended-spacing {
+    word-spacing: 23px;
+
+}
+
+
+.bet-button {
+
+    margin-bottom: 50px;
+    margin-right: 50px;
+
+    padding: 12px 32px;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: center;
+    line-height: normal;
+    border: 1px solid #fff;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 0.6);
+    z-index: 0;
+}
+
+
+
+.footer {
+
+}
+
+
+
+
+
+.lots {
+
+}
+
+
+.about {
+
+}
