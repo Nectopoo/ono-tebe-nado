@@ -329,9 +329,6 @@
     margin-bottom: 90px;
 }
 
-.footer__menu {
-}
-
 .footer__menu-list {
     list-style: none;
     text-align: center;
@@ -361,12 +358,6 @@
     list-style: none;
     justify-self: end;
     gap: 48px;
-}
-
-.footer__social-list-item {
-}
-
-.footer__social-link {
 }
 
 .footer__social-icon {
